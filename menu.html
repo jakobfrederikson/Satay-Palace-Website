@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Satay Palace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.6.0.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  </head>
+  <body id="mobile-order-close">
+
+      <!-- NAVIGATION -->
+      <!-- Navigation made possible by Dev Ed on Youtube -->
+      <nav>
+        <div class="logo">
+          <h4>Satay Palace</h4>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu & Ordering</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Log In</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+
+      <!-- CONTENT -->
+      <div class="page-container">
+
+        <!-- MOBILE ORDER TAB -->
+        <div class="row">
+          <div class="col-12 mobile-order-button" id="mobile-order-button">
+            <h2>Your Order</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 mobile-order-card" id="mobile-order-card">
+            <div class="mobile-order-contents">
+              <div class="mobile-header-header">
+                <h2>Your Order</h2>
+                <hr>
+              </div>
+              <div class="mobile-orders">
+                <div class="mobile-item" id="mobile-itemName">
+
+                </div>
+                <div class="mobile-price" id="mobile-price">
+
+                </div>
+              </div>
+              <div class="mobile-order-pay">
+                <hr>
+                <h4 id="mobile-total">Total:</h4>
+                <div class="mobile-pay-button">PAYMENT</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DESKTOP ORDER TAB -->
+        <div class="row">
+          <div class="col-12 desktop-order" id="desktop-order-card">
+            <div class="desktop-order-contents">
+              <div class="desktop-order-header">
+                <h2>Your Order</h2>
+                <hr>
+              </div>
+              <div class="desktop-orders">
+                <div class="itemName" id="itemName">
+
+                </div>
+                <div class="price" id ="price">
+
+                </div>
+              </div>
+              <div class="desktop-order-pay">
+                <hr>
+                <h4 id="total">Total: </h4>
+                <div class="pay-button">PAYMENT
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STARTERS -->
+        <div class="row menu-section starters">
+          <h2>Starters</h2>
+          <div class="row">
+            <div class="col-3 food-card">
+              <div class="food-card-contents">
+                <img src="images/menu1.jpg" alt="">
+                <h3>Wontons (x8)</h3>
+                <p>$10</p>
+                <div class="add-to-order-button" id="wontons">
+                  Add To Order
+                </div>
+              </div>
+            </div>
+            <div class="col-3 food-card">
+              <div class="food-card-contents">
+                <img src="images/menu2.jpg" alt="">
+                <h3>Satay (x6)</h3>
+                <p>$13</p>
+                <div class="add-to-order-button" id="satay">
+                  Add To Order
+                </div>
+              </div>
+            </div>
+            <div class="col-3 food-card">
+              <div class="food-card-contents">
+                <img src="images/menu1.jpg" alt="">
+                <h3>Dumpling (x5)</h3>
+                <p>$10</p>
+                <div class="add-to-order-button" id="dumplings">
+                  Add To Order
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MAIN -->
+        <div class="row menu-section drinks">
+          <h2>Mains</h2>
+          <div class="row">
+            <div class="col-3 food-card">
+              <div class="food-card-contents">
+                <img src="images/menu1.jpg" alt="">
+                <h3>Nyonya Chicken</h3>
+                <p>$15</p>
+                <div class="add-to-order-button" id="nyonya">
+                  Add To Order
+                </div>
+              </div>
+            </div>
+            <div class="col-3 food-card">
+              <div class="food-card-contents">
+                <img src="images/menu1.jpg" alt="">
+                <h3>Sweet and Sour Pork</h3>
+                <p>$15</p>
+                <div class="add-to-order-button" id="s-s-pork">
+                  Add To Order
+                </div>
+              </div>
+            </div>
+            <div class="col-3 food-card">
+              <div class="food-card-contents">
+                <img src="images/menu1.jpg" alt="">
+                <h3>BBQ Pork Wonton Noodles</h3>
+                <p>$15</p>
+                <div class="add-to-order-button" id="bbqnoodle">
+                  Add To Order
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DRINKS -->
+        <div class="row menu-section drinks">
+          <h2>Drinks</h2>
+          <div class="row">
+            <div class="col-3 food-card">
+              <div class="food-card-contents">
+                <img src="images/menu1.jpg" alt="">
+                <h3>Teh (Hot)</h3>
+                <p>$4</p>
+                <div class="add-to-order-button" id="teh-hot">
+                  Add To Order
+                </div>
+              </div>
+            </div>
+            <div class="col-3 food-card">
+              <div class="food-card-contents">
+                <img src="images/menu1.jpg" alt="">
+                <h3>Teh (Ice)</h3>
+                <p>$4</p>
+                <div class="add-to-order-button" id="teh-ice">
+                  Add To Order
+                </div>
+              </div>
+            </div>
+            <div class="col-3 food-card">
+              <div class="food-card-contents">
+                <img src="images/menu1.jpg" alt="">
+                <h3>Coke 330ml</h3>
+                <p>$2.50</p>
+                <div class="add-to-order-button" id="coke">
+                  Add To Order
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- page container ends -->
+      </div>
+
+      <footer class="row">
+        <div class="col-6">
+          <h3>Author</h3>
+          <p>Jakob Frederikson<br>
+          <p>Email Me: jakobfred1999@gmail.com</p>
+        </div>
+        <div class="col-6">
+          <h3>SATAY PALACE CONTACT DETAILS</h3>
+          <p><strong>Phone:</strong> 04-801 5719</p>
+          <p><strong>Location:</strong> 165 Cuba Street, Te Aro, Wellington 6011</p>
+        </div>
+      </footer>
+
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

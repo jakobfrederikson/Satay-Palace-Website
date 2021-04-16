@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Satay Palace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="js/jquery-3.6.0.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  </head>
+  <body>
+
+
+
+      <!-- NAVIGATION -->
+      <nav>
+        <div class="logo">
+          <h4>Satay Palace</h4>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu & Ordering</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="login.html">Log In</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+
+    <div class="page-container">
+
+      <!-- CONTENT -->
+      <h1>CONTACT US</h1>
+      <div class="container-contact">
+        <form action="no_action_page_yet.php">
+
+          <label for="fname">First Name</label>
+          <input class="contact-input" type="text" id="fname" name="firstname" placeholder="Your name..">
+
+          <label for="lname">Last Name</label>
+          <input class="contact-input" type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="email">Email</label>
+          <input class="contact-input" type="text" id="email" name="user-email" placeholder="john.smith@example.com..">
+
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+          <input class="contact-submit" type="submit" value="Submit">
+
+        </form>
+
+        <br>
+
+        <!-- GOOGLE MAPS -->
+
+        Satay Palace Location
+        <div class="row">
+          <div class="col-6" id="map">
+
+          <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+          <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByIsYUSxoHcoail-5LaSovY2ww_ljfNXg&callback=initMap&libraries=&v=weekly"
+          async
+          ></script>
+          </div>
+
+          <div class="col-6 contact-section">
+            <h3>Contact Details</h3>
+            <hr>
+            <div class="contact-details">
+              <div class="phone-number contact-text">
+                <h4>Phone number:</h4>
+                <p>04-801 5719</p>
+              </div>
+              <div class="location contact-text">
+                <h4>Location: </h4>
+                <p>165 Cuba Street, Te Aro, Wellington 6011</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    <!-- page container -->
+    </div>
+
+    <footer class="row">
+      <div class="col-6">
+        <h3>Author</h3>
+        <p>Jakob Frederikson<br>
+        <p>Email Me: jakobfred1999@gmail.com</p>
+      </div>
+      <div class="col-6">
+        <h3>Satay Palace Contact Details</h3>
+        <p><strong>Phone:</strong> 04-801 5719</p>
+        <p><strong>Location:</strong> 165 Cuba Street, Te Aro, Wellington 6011</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
